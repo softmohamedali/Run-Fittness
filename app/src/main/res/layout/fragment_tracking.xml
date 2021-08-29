@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context=".ui.fragments.TrackingFragment">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map_trackfrag"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tv_trckfrag_counter"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:id="@+id/tv_timer_trackfrag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/_40sdp"
+            android:text="@string/_00_00_00_00"
+            android:fontFamily="@font/takecute"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_trackfrag_start"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            style="@style/CustomButton"
+            android:textSize="@dimen/_20sdp"
+            android:padding="@dimen/_10sdp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tv_timer_trackfrag"
+            app:layout_constraintStart_toStartOf="@+id/tv_timer_trackfrag"
+            app:layout_constraintTop_toBottomOf="@+id/tv_timer_trackfrag" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
