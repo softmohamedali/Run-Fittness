@@ -2,8 +2,10 @@ package com.example.runfittnes.utils
 
 import android.Manifest
 import android.content.Context
+import android.location.Location
 import android.os.Build
 import android.widget.Toast
+import com.google.android.gms.maps.model.LatLng
 import pub.devrel.easypermissions.EasyPermissions
 import java.util.concurrent.TimeUnit
 
@@ -44,11 +46,33 @@ object MyUtility {
                     "${if (sec<10) "0" else ""}${sec}"
         }
         ms-=TimeUnit.SECONDS.toMillis(sec)
-        ms /=100
+        ms /=1000
         return "${if (hour<10) "0" else ""}${hour}:"+
                 "${if (men<10) "0" else ""}${men}:"+
                 "${if (sec<10) "0" else ""}${sec}:"+
                 "${if (ms<10) "0" else ""}${ms}"
+    }
+
+
+    fun calculteAllPolyLinesLength(polyline:MutableList<LatLng>):Float
+    {
+        var destince=0F
+        for (i in 0.. polyline.size-2)
+        {
+            val first=polyline[i]
+            val end=polyline[i+1]
+
+            val result=FloatArray(1)
+            Location.distanceBetween(
+                    first.latitude,
+                    first.longitude,
+                    end.latitude,
+                    end.longitude,
+                    result
+            )
+            destince+=result[0]
+        }
+        return destince
     }
 
 }

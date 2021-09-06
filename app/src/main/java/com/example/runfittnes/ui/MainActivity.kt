@@ -14,7 +14,9 @@ import com.example.runfittnes.databinding.ActivityMainBinding
 import com.example.runfittnes.databinding.FragmentRunBinding
 import com.example.runfittnes.ui.fragments.TrackingFragment
 import com.example.runfittnes.utils.Constants
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     private var _binding: ActivityMainBinding?=null
     private val binding get() = _binding!!

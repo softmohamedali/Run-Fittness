@@ -1,6 +1,8 @@
 package com.example.runfittnes.di
 
 import android.content.Context
+import android.content.Context.MODE_PRIVATE
+import android.content.SharedPreferences
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.example.runfittnes.data.RunDataBase
@@ -29,4 +31,25 @@ object DatabaseModule {
     @Singleton
     fun provideRunDao(runDataBase: RunDataBase)=
         runDataBase.getDao()
+
+    @Provides
+    @Singleton
+    fun provideSheredPrefrences(@ApplicationContext context: Context)=
+            context.getSharedPreferences(Constants.SHP_NAME,MODE_PRIVATE)
+
+    @Provides
+    @Singleton
+    fun provideIsFirstTime(shp:SharedPreferences)=
+            shp.getBoolean(Constants.KEY_ISFIRSTTIME_SHP,true)
+
+    @Provides
+    @Singleton
+    fun provideName(shp:SharedPreferences)=
+            shp.getString(Constants.KEY_NAME_SHP,"")?:""
+
+    @Provides
+    @Singleton
+    fun provideWight(shp:SharedPreferences)=
+            shp.getFloat(Constants.KEY_WIGHT_SHP,75f)
+
 }

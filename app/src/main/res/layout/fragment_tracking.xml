@@ -25,28 +25,46 @@
             android:id="@+id/tv_timer_trackfrag"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/takecute"
+            android:text="@string/_00_00_00_00"
             android:textColor="@color/dark_gray"
             android:textSize="@dimen/_40sdp"
-            android:text="@string/_00_00_00_00"
-            android:fontFamily="@font/takecute"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.23000002" />
 
         <Button
             android:id="@+id/btn_trackfrag_start"
+            style="@style/CustomButton"
             android:layout_width="@dimen/_100sdp"
             android:layout_height="wrap_content"
-            android:text="Start"
-            style="@style/CustomButton"
-            android:textSize="@dimen/_20sdp"
             android:padding="@dimen/_10sdp"
+            android:text="Start"
+            android:textSize="@dimen/_20sdp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/tv_timer_trackfrag"
+            app:layout_constraintHorizontal_bias="0.491"
             app:layout_constraintStart_toStartOf="@+id/tv_timer_trackfrag"
-            app:layout_constraintTop_toBottomOf="@+id/tv_timer_trackfrag" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_timer_trackfrag"
+            app:layout_constraintVertical_bias="0.26" />
+
+        <Button
+            android:id="@+id/btn_finsh_trackFrag"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/finsh"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold"
+            style="@style/CustomButton"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btn_trackfrag_start"
+            app:layout_constraintStart_toStartOf="@+id/btn_trackfrag_start"
+            app:layout_constraintTop_toBottomOf="@+id/btn_trackfrag_start" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

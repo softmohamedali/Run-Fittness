@@ -8,6 +8,8 @@
     <string name="run_fit">Run Fit</string>
     <string name="user_wight_in_k_g">User Wight in k.g</string>
     <string name="sort_by">Sort By :</string>
-    <string name="_00_00_00_00">00:00:00:00</string>
+    <string name="_00_00_00_00">00:00:00</string>
     <string name="cancle_tracking">Cancle tracking</string>
+    <string name="finsh">Finsh</string>
+    <string name="applay_changes">Applay Changes</string>
 </resources>

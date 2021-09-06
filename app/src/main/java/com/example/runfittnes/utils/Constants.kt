@@ -11,4 +11,11 @@ object Constants {
     const val NOTIFICATION_CHANNEL_ID="NOTFICATION_CHANNEL_ID"
     const val ACTION_PENDING_TO_TRCKFRAG="ACTION_PENDING_TO_TRCKFRAG"
     const val NOTIFICATION_ID=1
+
+
+    //shered prefrences key
+    const val SHP_NAME="SHP"
+    const val KEY_NAME_SHP="NAME"
+    const val KEY_WIGHT_SHP="WIGHT"
+    const val KEY_ISFIRSTTIME_SHP="isfirst"
 }

@@ -40,7 +40,10 @@ interface Dao {
     fun getSumcaloryBurned():Flow<Int>
 
     @Query("SELECT AVG(avgSpeed) FROM runtable")
-    fun getAvgSpeed():Flow<Float>
+    fun getSumAvgSpeed():Flow<Float>
+
+    @Query("SELECT SUM(runTime) FROM runtable")
+    fun getSumRunTime():Flow<Long>
 
 }
 

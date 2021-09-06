@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/setup_roo_layout"
     tools:context=".ui.fragments.SetupFragment" >
 
     <TextView
@@ -50,6 +51,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_name_setupfrag"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="text"
@@ -70,6 +72,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_wight_setupfrag"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="@font/takecute"
