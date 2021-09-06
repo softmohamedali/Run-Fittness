@@ -24,6 +24,54 @@
 
 ## setup name and wight 🌴🌴
 
-<img src="zphotos/a3ae3f47-718b-426b-866d-7e3c5732f34b.jpg" width="300">
+<img src="pic0.PNG" width="300">
+<br/>
+<br/>
+
+## ask for permission 🌴🌴
+
+<img src="pic2.PNG" width="300">
+<br/>
+<br/>
+
+## run screen for start run or pause or finsh or cancle run 🌴🌴
+
+<img src="pic3.PNG" width="300">
+<br/>
+<br/>
+
+## cancle run 🌴🌴
+
+<img src="pic4.PNG" width="300">
+<br/>
+<br/>
+
+## this is main screen show you all run 🌴🌴
+
+<img src="pic5.PNG" width="300">
+<br/>
+<br/>
+
+## you can sort recycle by yor avg speed and time ....... 🌴🌴
+
+<img src="pic6.PNG" width="300">
+<br/>
+<br/>
+
+## updata your name or wight 🌴🌴
+
+<img src="pic7.PNG" width="300">
+<br/>
+<br/>
+
+## screen show you your statics and yor progress 🌴🌴
+
+<img src="pic8.PNG" width="300">
+<br/>
+<br/>
+
+## tracking with phone in sleep mode with notification 🌴🌴
+
+<img src="pic9.PNG" width="300">
 <br/>
 <br/>
