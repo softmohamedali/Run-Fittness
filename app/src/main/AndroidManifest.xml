@@ -27,7 +27,7 @@
             android:foregroundServiceType="location"/>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCwMIBbvtM3t9mRB_GeEcL4LKUDbj4dUfg" />
+            android:value="${mapKey}" />
         <uses-library android:name="com.google.android.maps"/>
         <meta-data
             android:name="com.google.android.gms.version"
